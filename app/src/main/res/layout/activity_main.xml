@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/bgcontent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/mmedium"
+                android:paddingLeft="15dp"
+                android:text="NIK"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNIK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/etbackground"
+                android:ems="10"
+                android:fontFamily="@font/mlight"
+                android:hint="Masukkan NIK"
+                android:inputType="number"
+                android:maxLength="16"
+                android:padding="15dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/namaWarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/mmedium"
+                android:paddingLeft="15dp"
+                android:text="Nama Lengkap"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNamaWarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/etbackground"
+                android:ems="10"
+                android:fontFamily="@font/mlight"
+                android:hint="Masukkan Nama"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/usiaWarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/mmedium"
+                android:paddingLeft="15dp"
+                android:text="Usia (Tahun)"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUsiaWarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/etbackground"
+                android:ems="10"
+                android:fontFamily="@font/mlight"
+                android:hint="Masukkan Usia (Dalam Tahun)"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="15dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/jenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/mmedium"
+                android:paddingLeft="15dp"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioJK"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/jkPria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pregular"
+                    android:text="Laki-laki"
+                    android:textColor="@color/textColor" />
+
+                <RadioButton
+                    android:id="@+id/jkWanita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/pregular"
+                    android:text="Perempuan"
+                    android:textColor="@color/textColor" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/mmedium"
+                android:paddingLeft="15dp"
+                android:text="Pekerjaan"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pekerjaan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/plight"
+                    android:text="Siswa/Mahasiswa"
+                    android:textColor="@color/textColor" />
+
+                <CheckBox
+                    android:id="@+id/pekerjaan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/plight"
+                    android:text="Wirausaha"
+                    android:textColor="@color/textColor" />
+
+                <CheckBox
+                    android:id="@+id/pekerjaan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/plight"
+                    android:text="ASN/PNS"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mmedium"
+                android:gravity="center"
+                android:text="Bantu Kami Lebih Baik Lagi !"
+                android:textColor="@color/textColor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/plight"
+                android:gravity="center"
+                android:text="Nilai Kemudahan Penggunaan Aplikasi"
+                android:textColor="@color/textColor" />
+
+            <SeekBar
+                android:id="@+id/parameterKemudahan"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:max="2"
+                android:padding="10dp"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tvNilaiSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/textColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="2dp"
+                    android:backgroundTint="#00bdf2"
+                    android:fontFamily="@font/pregular"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#CE0000"
+                    android:fontFamily="@font/pregular"
+                    android:text="Reset"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/readData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:backgroundTint="#00bdf2"
+                android:fontFamily="@font/pregular"
+                android:text="Lihat Data Penduduk"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
